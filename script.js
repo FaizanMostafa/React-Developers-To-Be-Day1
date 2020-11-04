@@ -138,6 +138,12 @@ console.log(students);
 
 
 
+//Calculate the sum of ages of all the students
+let result = students.reduce((student1, student2)=>({age: student1.age+student2.age}));
+console.log("Sum of Ages: ", result.age);
+
+
+
 //Updating some specific(student who's roll number is 'ag-6') student's information(age and class)
 //(1st way i.e Out-of-place update)
 let updatedStudentsInfo = [];
